@@ -1,0 +1,278 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlg_Volatility_Base</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlg_Volatility_Base</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>610</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>母线波动率详细信息</string>
+    </property>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>layout3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>0</y>
+                <width>560</width>
+                <height>50</height>
+            </rect>
+        </property>
+        <hbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>LE_Search</cstring>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>btn_search</cstring>
+                </property>
+                <property name="text">
+                    <string>查询</string>
+                </property>
+            </widget>
+        </hbox>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>layout1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>50</y>
+                <width>560</width>
+                <height>50</height>
+            </rect>
+        </property>
+        <hbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1</cstring>
+                </property>
+                <property name="text">
+                    <string>母线名称</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>LE_MXName</cstring>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel3</cstring>
+                </property>
+                <property name="text">
+                    <string>所属厂站名</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>LE_Station</cstring>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+        </hbox>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>layout4</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>100</y>
+                <width>560</width>
+                <height>40</height>
+            </rect>
+        </property>
+        <hbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel4</cstring>
+                </property>
+                <property name="text">
+                    <string>当前电压值</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>LE_Voltage</cstring>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel5</cstring>
+                </property>
+                <property name="text">
+                    <string>电压最大值</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>LE_MaxVoltage</cstring>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel6</cstring>
+                </property>
+                <property name="text">
+                    <string>电压最小值</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>LE_MinVoltage</cstring>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+        </hbox>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>layout5</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>140</y>
+                <width>560</width>
+                <height>50</height>
+            </rect>
+        </property>
+        <hbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel7</cstring>
+                </property>
+                <property name="text">
+                    <string>当前波动率</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>LE_Volatility</cstring>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel8</cstring>
+                </property>
+                <property name="text">
+                    <string>最大波动率</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>LE_MaxVolatility</cstring>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel9</cstring>
+                </property>
+                <property name="text">
+                    <string>最小效率</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>LE_MinVolatility</cstring>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+        </hbox>
+    </widget>
+    <widget class="QTable">
+        <column>
+            <property name="text">
+                <string>母线id</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>母线名称</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>波动率</string>
+            </property>
+        </column>
+        <property name="name">
+            <cstring>VoTable</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>200</y>
+                <width>560</width>
+                <height>270</height>
+            </rect>
+        </property>
+        <property name="numRows">
+            <number>0</number>
+        </property>
+        <property name="numCols">
+            <number>3</number>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>btn_search</sender>
+        <signal>clicked()</signal>
+        <receiver>dlg_Volatility_Base</receiver>
+        <slot>Search()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>Search()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
